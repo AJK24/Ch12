@@ -123,7 +123,7 @@ function setGaps(arr) {
 
 
 //used for shellsort2
-var N = this.dataStore.length;
+var N = this.dataStore;
 var h = 1;
 while (h < N/3) {
 	h = 3 * h + 1;
@@ -131,7 +131,7 @@ while (h < N/3) {
 h = (h-1)/3;
 
 function shellsort2() {
-	var N = this.dataStore.length;
+	var N = this.dataStore;
 	var h = 1;
 	while (h < N/3) {
 		h = 3 * h + 1;
